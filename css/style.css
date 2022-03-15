@@ -1,5 +1,5 @@
 body{
-    font-family: Didot;
+    font-family: Candara;
     background-image: url("../images/backgroundphoto.png");
     background-color: peachpuff;
     color: #152d3d;
@@ -69,3 +69,28 @@ footer{
     background-color: #CBD4E1;
     padding: 32 px 8px;
 }
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 4px solid burlywood;
+    border-radius: 10px;
+    box-sizing: border-box;
+    
+  }
+  input[type=submit] {
+    background-color: burlywood;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;  }
+    
+    label {
+        display: block;
+        text-align: center;
+        padding: 2px 0px;
+    }
+  

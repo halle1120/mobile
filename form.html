@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="imgs/email.png"/>
+        <title>Sample Form</title>
+        <link rel="stylesheet" href="css/style.css"/>
+      
+      </head>
+      <body>
+          <!-- Action removed for security purposes -->
+       <form>
+        <fieldset>
+          <legend>Coffee Form</legend>
+      
+          <label for="coffee_id">Favorite Kind</label>
+          <input type="text" placeholder="Enter Your Answer" id = "coffee_id" name="name" required>
+      
+          <label for="hometown_id">Hometown</label>
+          <input type="hometown" placeholder="Enter Your Hometown" id = "hometown_id" name="hometown" required>
+      
+          <label for="phone_id">Your Phone Number</label>
+          <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+      
+      
+          <label for="comments">Additional Comments</label>
+          <textarea placeholder="Enter your message" id = "comments" name="mesg" required></textarea><br>
+      
+          <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
+          <label for ="cBox">Remember me</label>
+      
+          <input type="submit" value = "Contact Me">
+        </fieldset>
+       </form>
+      </body>
+      </html>
