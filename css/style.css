@@ -1,7 +1,6 @@
 body{
     font-family: Candara;
-    background-image: url("../images/backgroundphoto.png");
-    background-color: peachpuff;
+    background-color: #FBEEC1;
     color: #152d3d;
     margin-top: 25px;
     margin-left: 25px;
@@ -12,12 +11,11 @@ footer{
     display: flex;
     flex-wrap: wrap;
     padding: 32 px 8px;
-
 }
 
 nav li{
     padding: 10px;
-    background: rgb(102, 126, 205);
+    background: #BC986A;
     color: white;
     margin: 6px 0;
     width: auto;
@@ -33,11 +31,11 @@ nav ul {
     list-style: none;
 }
 nav a {
-    color: white;
+    color: black;
 }
 
 nav a:visited{
-    color: white;
+    color: black;
 }
 
 nav a:hover{
@@ -45,11 +43,12 @@ nav a:hover{
 }
 
 h1{
-    font-size: 30px;
+    font-size: 40px;
     margin: 12px 0;
-    background-color: peachpuff;
+    background-image: url("../images/backgroundphoto.png");
+    background-color: #B49082;
     border-radius: 50px;
-    color: midnightblue;
+    color: black;
     font-style: bold;
     text-align: center;
     padding: 20px;
@@ -57,16 +56,23 @@ h1{
 }
 
 h2{
-    font-size: 18px;
+    font-size: 25px;
     margin: 12px 0;
-    color: midnightblue;
+    color: black;
+    padding: 10px;
+    text-decoration: underline white 5px;
+}
+h3{
+    font-size: 25px;
+    margin: 12px 0;
+    color: black;
     padding: 10px;
     text-decoration: underline white 5px;
 }
 
 p{
-    font-size: 16px;
-    color:midnightblue;
+    font-size: 20px;
+    color: black;
     padding: 10px;
     text-align: left;
     margin-left: 2px;
@@ -76,7 +82,7 @@ p{
 img{
     margin: 40px;
     width: 500px;
-    border: 4px dotted burlywood;
+    border: 4px dotted black;
     border-radius: 20%;
     padding: 2px;
 }
@@ -111,11 +117,17 @@ img:hover:nth-child(odd){
     
 }
 .active{
-    background-color: black;
+    background-color: white;
     font-weight: bold;
-    border: 2px solid black;
+    border: 2px solid white;
 }
 .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+.rotate{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -146,6 +158,20 @@ input {
         text-align: center;
         padding: 2px 0px;
     }
+
+    .rotate {
+      animation: rotation 8s infinite linear;
+    }
+    
+    @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+    }
+
 
     @media only screen and (max-width: 992px){
         .nav{
